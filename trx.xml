@@ -1,0 +1,1388 @@
+<TranscevierDetails xmlns='http://atmel.com/TranscevierDetails'>
+<Transcevier Name='AT86RF231'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='3' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2'  Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-101' />
+   <LINKBUDGET Value='104'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='125'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc8111.pdf' />
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='-' Offset='13' />
+     <REGISTER Name='-' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='-' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='-' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF231+FEM'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='4' Max='21' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-101' />
+   <LINKBUDGET Value='104'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='125'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc8111.pdf' />	
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='-' Offset='13' />
+     <REGISTER Name='-' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='-' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='-' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF232'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='3' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='250Kbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-100' />
+   <LINKBUDGET Value='103'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='70'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc8321.pdf' />	
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='XAH_CTRL_2' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='36' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF233'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='4' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22,32' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='Range' Min='0' Max='1' />
+   <ISMFREQUENCY Type='Range' Min='2322.0' Max='2527.0' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-101' />
+   <LINKBUDGET Value='105'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/images/atmel-8351-mcu_wireless-at86rf233_datasheet.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='CC_CTRL_0' Offset='13' />
+     <REGISTER Name='CC_CTRL_1' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='TRX_RPC' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='XAH_CTRL_2' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='36' />
+     <REGISTER Name='PHY_TX_TIME/PHY_PMU_VALUE' Offset='3B' />
+     <REGISTER Name='TST_AGC' Offset='3C' />
+     <REGISTER Name='TST_SDM' Offset='3D' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+ 
+ <Transcevier Name='AT86RF233+FEM'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='3' Max='21' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22,32' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='Range' Min='0' Max='1' />
+   <ISMFREQUENCY Type='Range' Min='2322.0' Max='2527.0' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-101' />
+   <LINKBUDGET Value='105'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/images/atmel-8351-mcu_wireless-at86rf233_datasheet.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='CC_CTRL_0' Offset='13' />
+     <REGISTER Name='CC_CTRL_1' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='TRX_RPC' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='XAH_CTRL_2' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='36' />
+     <REGISTER Name='PHY_TX_TIME' Offset='38' />
+     <REGISTER Name='PHY_PMU_VALUE' Offset='3B' />
+     <REGISTER Name='TST_AGC' Offset='3C' />
+     <REGISTER Name='TST_SDM' Offset='3D' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='ATMEGARFA1'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='4' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-100' />
+   <LINKBUDGET Value='103.5'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='125'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc8266.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='141' />
+     <REGISTER Name='TRX_STATE' Offset='142' />
+     <REGISTER Name='TRX_CTRL_0' Offset='143' />
+     <REGISTER Name='TRX_CTRL_1' Offset='144' />
+     <REGISTER Name='PHY_TX_PWR' Offset='145' />
+     <REGISTER Name='PHY_RSSI' Offset='146' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='147' />
+     <REGISTER Name='PHY_CC_CCA' Offset='148' />
+     <REGISTER Name='CCA_THRES' Offset='149' />
+     <REGISTER Name='RX_CTRL' Offset='14A' />
+     <REGISTER Name='SFD_VALUE' Offset='14B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='14C' />
+     <REGISTER Name='ANT_DIV' Offset='14D' />
+     <REGISTER Name='IRQ_MASK' Offset='14E' />
+     <REGISTER Name='IRQ_STATUS' Offset='14F' />
+     <REGISTER Name='VREG_CTRL' Offset='150' />
+     <REGISTER Name='BATMON' Offset='151' />
+     <REGISTER Name='XOSC_CTRL' Offset='152' />
+     <REGISTER Name='Reserved' Offset='153' />
+     <REGISTER Name='Reserved' Offset='154' />
+     <REGISTER Name='RX_SYN' Offset='155' />
+     <REGISTER Name='Reserved' Offset='156' />
+     <REGISTER Name='XAH_CTRL_1' Offset='157' />
+     <REGISTER Name='FTN_CTRL' Offset='158' />
+     <REGISTER Name='Reserved' Offset='159' />
+     <REGISTER Name='PLL_CF' Offset='15A' />
+     <REGISTER Name='PLL_DCU' Offset='15B' />
+     <REGISTER Name='PART_NUM' Offset='15C' />
+     <REGISTER Name='VERSION_NUM' Offset='15D' />
+     <REGISTER Name='MAN_ID_0' Offset='15E' />
+     <REGISTER Name='MAN_ID_1' Offset='15F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='160' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='161' />
+     <REGISTER Name='PAN_ID_0' Offset='162' />
+     <REGISTER Name='PAN_ID_1' Offset='163' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='164' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='165' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='166' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='167' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='168' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='169' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='16A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='16B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='16C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='16D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='16E' />
+     <REGISTER Name='CSMA_BE' Offset='16F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='176' />
+     <REGISTER Name='TST_RX_LENGTH' Offset='17B' />
+     <REGISTER Name='TRXFBST' Offset='180' />
+     <REGISTER Name='TRXFBEND' Offset='1FF' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='Yes'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='ATMEGARFR2'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,16,17'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+     <PAGE No='2' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='500kbps' HDR_Support='true' />
+     <PAGE No='16' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='1Mbps' HDR_Support='true' />
+     <PAGE No='17' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='2Mbps' HDR_Support='true'/>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='4' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='2Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-100' />
+   <LINKBUDGET Value='103.5'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='125'/>
+   <DATASHEET url='http://www.atmel.com/Images/Atmel-8393-MCU_Wireless-ATmega256RFR2-ATmega128RFR2-ATmega64RFR2_Datasheet.pdf' />			
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='141' />
+     <REGISTER Name='TRX_STATE' Offset='142' />
+     <REGISTER Name='TRX_CTRL_0' Offset='143' />
+     <REGISTER Name='TRX_CTRL_1' Offset='144' />
+     <REGISTER Name='PHY_TX_PWR' Offset='145' />
+     <REGISTER Name='PHY_RSSI' Offset='146' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='147' />
+     <REGISTER Name='PHY_CC_CCA' Offset='148' />
+     <REGISTER Name='CCA_THRES' Offset='149' />
+     <REGISTER Name='RX_CTRL' Offset='14A' />
+     <REGISTER Name='SFD_VALUE' Offset='14B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='14C' />
+     <REGISTER Name='ANT_DIV' Offset='14D' />
+     <REGISTER Name='IRQ_MASK' Offset='14E' />
+     <REGISTER Name='IRQ_STATUS' Offset='14F' />
+     <REGISTER Name='VREG_CTRL' Offset='150' />
+     <REGISTER Name='BATMON' Offset='151' />
+     <REGISTER Name='XOSC_CTRL' Offset='152' />
+     <REGISTER Name='CC_CTRL_0' Offset='153' />
+     <REGISTER Name='CC_CTRL_1' Offset='154' />
+     <REGISTER Name='RX_SYN' Offset='155' />
+     <REGISTER Name='TRX_RPC' Offset='156' />
+     <REGISTER Name='XAH_CTRL_1' Offset='157' />
+     <REGISTER Name='FTN_CTRL' Offset='158' />
+     <REGISTER Name='Reserved' Offset='159' />
+     <REGISTER Name='PLL_CF' Offset='15A' />
+     <REGISTER Name='PLL_DCU' Offset='15B' />
+     <REGISTER Name='PART_NUM' Offset='15C' />
+     <REGISTER Name='VERSION_NUM' Offset='15D' />
+     <REGISTER Name='MAN_ID_0' Offset='15E' />
+     <REGISTER Name='MAN_ID_1' Offset='15F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='160' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='161' />
+     <REGISTER Name='PAN_ID_0' Offset='162' />
+     <REGISTER Name='PAN_ID_1' Offset='163' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='164' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='165' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='166' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='167' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='168' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='169' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='16A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='16B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='16C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='16D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='16E' />
+     <REGISTER Name='CSMA_BE' Offset='16F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='176' />
+     <REGISTER Name='TST_RX_LENGTH' Offset='17B' />
+     <REGISTER Name='TST_AGC' Offset='17C' />
+     <REGISTER Name='TST_SDM' Offset='17D' />
+     <REGISTER Name='TRXFBST' Offset='180' />
+     <REGISTER Name='TRXFBEND' Offset='1FF' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='Yes'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF212B'>
+   <CHANNEL Type='Range' Min='0' Max='10' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,5,16,17,18,19'>
+     <PAGE No='0' FrequencyRange='Channel (0) 868.3MHz, Channel (1-10) 902MHz-928MHz' Modulation='BPSK' DataRate='20kbps(Channel 0),40kbps(Channel 1-10)'/>
+     <PAGE No='2' FrequencyRange='Channel (0) 868.3MHz, Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='100kbps(Channel 0),250kbps(Channel 1-10)'/>
+     <PAGE No='5' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='250kbps'/>
+     <PAGE No='16' FrequencyRange='Channel (0) 868.3MHz,Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='200kbps(Channel 0),500kbps(Channel 1-10)'/>
+     <PAGE No='17' FrequencyRange='Channel (0) 868.3MHz,Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='400kbps(Channel 0),1Mbps(Channel 1-10)'/>
+     <PAGE No='18' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='500kbps'/>
+     <PAGE No='19' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='1Mbps'/>
+   </CHANNELPAGE>
+   <REGIONS>
+     <REGION Name='North America'>
+       <FREQUENCY Type='Range' Min='906' Max='924' Increment='2'>
+         <CPAGE No='0' DataRate='40kbps' HDR_Support='false' />
+         <CPAGE No='2' DataRate='250kbps' HDR_Support='false' />
+         <CPAGE No='16' DataRate='500kbps' HDR_Support='true' />
+         <CPAGE No='17' DataRate='1Mbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='European Union'>
+       <FREQUENCY Type='Discrete' Values='868.3' Increment='0'>
+         <CPAGE No='0' DataRate='20kbps' HDR_Support='false' />
+         <CPAGE No='2' DataRate='100kbps' HDR_Support='false' />
+         <CPAGE No='16' DataRate='200kbps' HDR_Support='true' />
+         <CPAGE No='17' DataRate='400kbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='China'>
+       <FREQUENCY Type='Discrete' Values='780, 782, 784, 786'>
+         <CPAGE No='5' DataRate='250kbps' HDR_Support='false' />
+         <CPAGE No='18' DataRate='500kbps' HDR_Support='true'/>
+         <CPAGE No='19' DataRate='1Mbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+   </REGIONS>
+   <TXPOWERREGISTERVALUE Type='NA' />
+   <TXPOWER Type='Range' Min='-25' Max='11' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+     <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='700/800/900 MHz' />
+   <MAXDATARATE Value='1Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-110' />
+   <LINKBUDGET Value='120'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/Images/Atmel-42002-MCU_Wireless-AT86RF212B_Datasheet.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='CC_CTRL_0' Offset='13' />
+     <REGISTER Name='CC_CTRL_1' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='RF_CTRL_0' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF212'>
+   <CHANNEL Type='Range' Min='0' Max='10' />
+   <CHANNELPAGE Type='Discrete' Values='0,2,5,16,17,18,19'>
+     <PAGE No='0' FrequencyRange='Channel (0) 868.3MHz, Channel (1-10) 902MHz-928MHz' Modulation='BPSK' DataRate='20kbps(Channel 0),40kbps(Channel 1-10)'/>
+     <PAGE No='2' FrequencyRange='Channel (0) 868.3MHz, Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='100kbps(Channel 0),250kbps(Channel 1-10)'/>
+     <PAGE No='5' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='250kbps'/>
+     <PAGE No='16' FrequencyRange='Channel (0) 868.3MHz,Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='200kbps(Channel 0),500kbps(Channel 1-10)'/>
+     <PAGE No='17' FrequencyRange='Channel (0) 868.3MHz,Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='400kbps(Channel 0),1Mbps(Channel 1-10)'/>
+     <PAGE No='18' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='500kbps'/>
+     <PAGE No='19' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='1Mbps'/>
+   </CHANNELPAGE>
+   <REGIONS>
+     <REGION Name='North America'>
+       <FREQUENCY Type='Range' Min='906' Max='924' Increment='2'>
+         <CPAGE No='0' DataRate='40kbps' HDR_Support='false' />
+         <CPAGE No='2' DataRate='250kbps' HDR_Support='false' />
+         <CPAGE No='16' DataRate='500kbps' HDR_Support='true' />
+         <CPAGE No='17' DataRate='1Mbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='European Union'>
+       <FREQUENCY Type='Discrete' Values='868.3' Increment='0'>
+         <CPAGE No='0' DataRate='20kbps' HDR_Support='false' />
+         <CPAGE No='2' DataRate='100kbps' HDR_Support='false' />
+         <CPAGE No='16' DataRate='200kbps' HDR_Support='true' />
+         <CPAGE No='17' DataRate='400kbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='China'>
+       <FREQUENCY Type='Discrete' Values='780, 782, 784, 786'>
+         <CPAGE No='5' DataRate='250kbps' HDR_Support='false' />
+         <CPAGE No='18' DataRate='500kbps' HDR_Support='true'/>
+         <CPAGE No='19' DataRate='1Mbps' HDR_Support='true' />
+       </FREQUENCY>
+     </REGION>
+   </REGIONS>
+   <TXPOWERREGISTERVALUE Type='NA' />
+   <TXPOWER Type='Range' Min='-11' Max='10' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='No'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='700/800/900 MHz' />
+   <MAXDATARATE Value='1Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-110' />
+   <LINKBUDGET Value='120'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc8168.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='CC_CTRL_0' Offset='13' />
+     <REGISTER Name='CC_CTRL_1' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='RF_CTRL_0' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='RF_CTRL_1' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF230B'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0'>
+      <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps' HDR_Support='false' />
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='3' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='No'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='None'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4Ghz' />
+   <MAXDATARATE Value='250Kbps' />
+   <EXTERNALPACONTROL Supported='No' />
+   <RECEIVERSENSITIVITY Value='-101' />
+   <LINKBUDGET Value='104'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/Images/doc5131.pdf' />		
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF215-RF24'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,9'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps'/>
+     <PAGE No='9'>
+       <FRAMELENGTH Type='Range' Min='12' Max='2047' />
+       <CHANNEL Type='Range' Min='0' Max='416' />
+       <FREQUENCY Name='2450MHz ISM Band' Value='13'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 4' Values='0,4' />
+         </MODULATION>
+       </FREQUENCY>
+     </PAGE>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='31' />
+   <TXPOWER Type='Range' Min='-17' Max='14' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='No'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <REGISTERS>
+     <REGISTER Name='RF24_IRQS' Offset='1' />
+     <REGISTER Name='BBC1_IRQS' Offset='3' />
+     <REGISTER Name='RF_RST' Offset='5' />
+     <REGISTER Name='RF_CFG' Offset='6' />
+     <REGISTER Name='RF_CLKO' Offset='7' />
+     <REGISTER Name='RF_BMDVC' Offset='8' />
+     <REGISTER Name='RF_XOC' Offset='9' />
+     <REGISTER Name='RF_IQIFC0' Offset='A' />
+     <REGISTER Name='RF_IQIFC1' Offset='B' />
+     <REGISTER Name='RF_PN' Offset='D' />
+     <REGISTER Name='RF_VN' Offset='E' />
+     <REGISTER Name='RF24_IRQM' Offset='200' />
+     <REGISTER Name='RF24_AUXS' Offset='201' />
+     <REGISTER Name='RF24_STATE' Offset='202' />
+     <REGISTER Name='RF24_CMD' Offset='203' />
+     <REGISTER Name='RF24_CS' Offset='204' />
+     <REGISTER Name='RF24_CCF0L' Offset='205' />
+     <REGISTER Name='RF24_CCF0H' Offset='206' />
+     <REGISTER Name='RF24_CNL' Offset='207' />
+     <REGISTER Name='RF24_CNM' Offset='208' />
+     <REGISTER Name='RF24_RXBWC' Offset='209' />
+     <REGISTER Name='RF24_RXDFE' Offset='20A' />
+     <REGISTER Name='RF24_AGCC' Offset='20B' />
+     <REGISTER Name='RF24_AGCS' Offset='20C' />
+     <REGISTER Name='RF24_RSSI' Offset='20D' />
+     <REGISTER Name='RF24_EDC' Offset='20E' />
+     <REGISTER Name='RF24_EDD' Offset='20F' />
+     <REGISTER Name='RF24_EDV' Offset='210' />
+     <REGISTER Name='RF24_RNDV' Offset='211' />
+     <REGISTER Name='RF24_TXCUTC' Offset='212' />
+     <REGISTER Name='RF24_TXDFE' Offset='213' />
+     <REGISTER Name='RF24_PAC' Offset='214' />
+     <REGISTER Name='RF24_PADFE' Offset='216' />
+     <REGISTER Name='RF24_PLL' Offset='221' />
+     <REGISTER Name='RF24_TXDACI' Offset='227' />
+     <REGISTER Name='RF24_TXDACQ' Offset='228' />
+     <REGISTER Name='BBC1_IRQM' Offset='400' />
+     <REGISTER Name='BBC1_PC' Offset='401' />
+     <REGISTER Name='BBC1_PS' Offset='402' />
+     <REGISTER Name='BBC1_FBLVL' Offset='403' />
+     <REGISTER Name='BBC1_RXFLL' Offset='404' />
+     <REGISTER Name='BBC1_RXFLH' Offset='405' />
+     <REGISTER Name='BBC1_TXFLL' Offset='406' />
+     <REGISTER Name='BBC1_TXFLH' Offset='407' />
+     <REGISTER Name='BBC1_OFDMPHRTX' Offset='40C' />
+     <REGISTER Name='BBC1_OFDMPHRRX' Offset='40D' />
+     <REGISTER Name='BBC1_OFDMC' Offset='40E' />
+     <REGISTER Name='BBC1_OQPSKC0' Offset='410' />
+     <REGISTER Name='BBC1_OQPSKC1' Offset='411' />
+     <REGISTER Name='BBC1_OQPSKC2' Offset='412' />
+     <REGISTER Name='BBC1_OQPSKC4' Offset='413' />
+     <REGISTER Name='BBC1_OQPSKPHRTX' Offset='414' />
+     <REGISTER Name='BBC1_OQPSKPHRRX' Offset='415' />
+     <REGISTER Name='BBC1_AFC0' Offset='420' />
+     <REGISTER Name='BBC1_AFC1' Offset='421' />
+     <REGISTER Name='BBC1_AFFTM' Offset='422' />
+     <REGISTER Name='BBC1_AFFVM' Offset='423' />
+     <REGISTER Name='BBC1_AFS' Offset='424' />
+     <REGISTER Name='BBC1_MACEA0' Offset='425' />
+     <REGISTER Name='BBC1_MACEA1' Offset='426' />
+     <REGISTER Name='BBC1_MACEA2' Offset='427' />
+     <REGISTER Name='BBC1_MACEA3' Offset='428' />
+     <REGISTER Name='BBC1_MACEA4' Offset='429' />
+     <REGISTER Name='BBC1_MACEA5' Offset='42A' />
+     <REGISTER Name='BBC1_MACEA6' Offset='42B' />
+     <REGISTER Name='BBC1_MACEA7' Offset='42C' />
+     <REGISTER Name='BBC1_MACPID0F0' Offset='42D' />
+     <REGISTER Name='BBC1_MACPID1F0' Offset='42E' />
+     <REGISTER Name='BBC1_MACSHA0F0' Offset='42F' />
+     <REGISTER Name='BBC1_MACSHA1F0' Offset='430' />
+     <REGISTER Name='BBC1_MACPID0F1' Offset='431' />
+     <REGISTER Name='BBC1_MACPID1F1' Offset='432' />
+     <REGISTER Name='BBC1_MACSHA0F1' Offset='433' />
+     <REGISTER Name='BBC1_MACSHA1F1' Offset='434' />
+     <REGISTER Name='BBC1_MACPID0F2' Offset='435' />
+     <REGISTER Name='BBC1_MACPID1F2' Offset='436' />
+     <REGISTER Name='BBC1_MACSHA0F2' Offset='437' />
+     <REGISTER Name='BBC1_MACSHA1F2' Offset='438' />
+     <REGISTER Name='BBC1_MACPID0F3' Offset='439' />
+     <REGISTER Name='BBC1_MACPID1F3' Offset='43A' />
+     <REGISTER Name='BBC1_MACSHA0F3' Offset='43B' />
+     <REGISTER Name='BBC1_MACSHA1F3' Offset='43C' />
+     <REGISTER Name='BBC1_FBRXS' Offset='3000' />
+     <REGISTER Name='BBC1_FBRXE' Offset='37FF' />
+     <REGISTER Name='BBC1_FBTXS' Offset='3800' />
+     <REGISTER Name='BBC1_FBTXE' Offset='3FFF' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+
+ <Transcevier Name='AT86RF215-RF09'>
+   <CHANNEL Type='Range' Min='0' Max='10' />
+   <CHANNELPAGE Type='Discrete' Values='2,5,9'>
+     <PAGE No='2' FrequencyRange='Channel (0) 868.3MHz, Channel (1-10) 902MHz-928MHz' Modulation='O-QPSK' DataRate='100kbps(Channel 0),250kbps(Channel 1-10)'/>
+     <PAGE No='5' FrequencyRange='779MHz - 787MHz' Modulation='O-QPSK' DataRate='250kbps'/>
+     <PAGE No='9'>
+       <CHANNEL Type='Range' Min='0' Max='199' />
+       <FRAMELENGTH Type='Range' Min='12' Max='2047' />
+       <FREQUENCY Name='470MHz China' Value='2'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option4' Values='3' />
+           <MCS Type='Discrete' Names='MCS2,MCS3,MCS4,MCS5,MCS6' Values='2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+       <FREQUENCY Name='780MHz China' Value='3'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+       <FREQUENCY Name='863MHz EU' Value='4'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+       <FREQUENCY Name='915MHz US' Value='7'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+       <FREQUENCY Name='917MHz Korea' Value='8'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+       <FREQUENCY Name='920MHz Japan' Value='9'>
+         <MODULATION Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </MODULATION>
+         <MODULATION Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </MODULATION>
+       </FREQUENCY>
+     </PAGE>
+   </CHANNELPAGE>
+   <REGIONS>
+     <REGION Name='North America'>
+       <FREQUENCY Type='Range' Min='906' Max='924' Increment='2'>
+         <PAGE No='2' DataRate='250kbps' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='European Union'>
+       <FREQUENCY Type='Discrete' Values='868.3' Increment='0'>
+         <PAGE No='2' DataRate='100kbps' />
+       </FREQUENCY>
+     </REGION>
+     <REGION Name='China'>
+       <FREQUENCY Type='Discrete' Values='780, 782, 784, 786'>
+         <PAGE No='5' DataRate='250kbps' />
+       </FREQUENCY>
+     </REGION>
+   </REGIONS>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='31' />
+   <TXPOWER Type='Range' Min='-17' Max='14' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='No'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='1' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <REGISTERS>
+     <REGISTER Name='RF09_IRQS' Offset='0' />
+     <REGISTER Name='BBC0_IRQS' Offset='2' />
+     <REGISTER Name='RF_RST' Offset='5' />
+     <REGISTER Name='RF_CFG' Offset='6' />
+     <REGISTER Name='RF_CLKO' Offset='7' />
+     <REGISTER Name='RF_BMDVC' Offset='8' />
+     <REGISTER Name='RF_XOC' Offset='9' />
+     <REGISTER Name='RF_IQIFC0' Offset='A' />
+     <REGISTER Name='RF_IQIFC1' Offset='B' />
+     <REGISTER Name='RF_PN' Offset='D' />
+     <REGISTER Name='RF_VN' Offset='E' />
+     <REGISTER Name='RF09_IRQM' Offset='100' />
+     <REGISTER Name='RF09_AUXS' Offset='101' />
+     <REGISTER Name='RF09_STATE' Offset='102' />
+     <REGISTER Name='RF09_CMD' Offset='103' />
+     <REGISTER Name='RF09_CS' Offset='104' />
+     <REGISTER Name='RF09_CCF0L' Offset='105' />
+     <REGISTER Name='RF09_CCF0H' Offset='106' />
+     <REGISTER Name='RF09_CNL' Offset='107' />
+     <REGISTER Name='RF09_CNM' Offset='108' />
+     <REGISTER Name='RF09_RXBWC' Offset='109' />
+     <REGISTER Name='RF09_RXDFE' Offset='10A' />
+     <REGISTER Name='RF09_AGCC' Offset='10B' />
+     <REGISTER Name='RF09_AGCS' Offset='10C' />
+     <REGISTER Name='RF09_RSSI' Offset='10D' />
+     <REGISTER Name='RF09_EDC' Offset='10E' />
+     <REGISTER Name='RF09_EDD' Offset='10F' />
+     <REGISTER Name='RF09_EDV' Offset='110' />
+     <REGISTER Name='RF09_RNDV' Offset='111' />
+     <REGISTER Name='RF09_TXCUTC' Offset='112' />
+     <REGISTER Name='RF09_TXDFE' Offset='113' />
+     <REGISTER Name='RF09_PAC' Offset='114' />
+     <REGISTER Name='RF09_PADFE' Offset='116' />
+     <REGISTER Name='RF09_PLL' Offset='121' />
+     <REGISTER Name='RF09_TXDACI' Offset='127' />
+     <REGISTER Name='RF09_TXDACQ' Offset='128' />
+     <REGISTER Name='BBC0_IRQM' Offset='300' />
+     <REGISTER Name='BBC0_PC' Offset='301' />
+     <REGISTER Name='BBC0_PS' Offset='302' />
+     <REGISTER Name='BBC0_FBLVL' Offset='303' />
+     <REGISTER Name='BBC0_RXFLL' Offset='304' />
+     <REGISTER Name='BBC0_RXFLH' Offset='305' />
+     <REGISTER Name='BBC0_TXFLL' Offset='306' />
+     <REGISTER Name='BBC0_TXFLH' Offset='307' />
+     <REGISTER Name='BBC0_OFDMPHRTX' Offset='30C' />
+     <REGISTER Name='BBC0_OFDMPHRRX' Offset='30D' />
+     <REGISTER Name='BBC0_OFDMC' Offset='30E' />
+     <REGISTER Name='BBC0_OQPSKC0' Offset='310' />
+     <REGISTER Name='BBC0_OQPSKC1' Offset='311' />
+     <REGISTER Name='BBC0_OQPSKC2' Offset='312' />
+     <REGISTER Name='BBC0_OQPSKC3' Offset='313' />
+     <REGISTER Name='BBC0_OQPSKPHRTX' Offset='314' />
+     <REGISTER Name='BBC0_OQPSKPHRRX' Offset='315' />
+     <REGISTER Name='BBC0_AFC0' Offset='320' />
+     <REGISTER Name='BBC0_AFC1' Offset='321' />
+     <REGISTER Name='BBC0_AFFTM' Offset='322' />
+     <REGISTER Name='BBC0_AFFVM' Offset='323' />
+     <REGISTER Name='BBC0_AFS' Offset='324' />
+     <REGISTER Name='BBC0_MACEA0' Offset='325' />
+     <REGISTER Name='BBC0_MACEA1' Offset='326' />
+     <REGISTER Name='BBC0_MACEA2' Offset='327' />
+     <REGISTER Name='BBC0_MACEA3' Offset='328' />
+     <REGISTER Name='BBC0_MACEA3' Offset='329' />
+     <REGISTER Name='BBC0_MACEA5' Offset='32A' />
+     <REGISTER Name='BBC0_MACEA6' Offset='32B' />
+     <REGISTER Name='BBC0_MACEA7' Offset='32C' />
+     <REGISTER Name='BBC0_MACPID0F0' Offset='32D' />
+     <REGISTER Name='BBC0_MACPID1F0' Offset='32E' />
+     <REGISTER Name='BBC0_MACSHA0F0' Offset='32F' />
+     <REGISTER Name='BBC0_MACSHA1F0' Offset='330' />
+     <REGISTER Name='BBC0_MACPID0F1' Offset='331' />
+     <REGISTER Name='BBC0_MACPID1F1' Offset='332' />
+     <REGISTER Name='BBC0_MACSHA0F1' Offset='333' />
+     <REGISTER Name='BBC0_MACSHA1F1' Offset='334' />
+     <REGISTER Name='BBC0_MACPID0F2' Offset='335' />
+     <REGISTER Name='BBC0_MACPID1F2' Offset='336' />
+     <REGISTER Name='BBC0_MACSHA0F2' Offset='337' />
+     <REGISTER Name='BBC0_MACSHA1F2' Offset='338' />
+     <REGISTER Name='BBC0_MACPID0F3' Offset='339' />
+     <REGISTER Name='BBC0_MACPID1F3' Offset='33A' />
+     <REGISTER Name='BBC0_MACSHA0F3' Offset='33B' />
+     <REGISTER Name='BBC0_MACSHA1F3' Offset='33C' />
+     <REGISTER Name='BBC0_FBRXS' Offset='2000' />
+     <REGISTER Name='BBC0_FBRXE' Offset='27FF' />
+     <REGISTER Name='BBC0_FBTXS' Offset='2800' />
+     <REGISTER Name='BBC0_FBTXE' Offset='2FFF' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+ 
+ <!-- Sample Values for testing-->
+ <Transcevier Name='TX'>
+   <CHANNEL Type='Range' Min='11' Max='26' />
+   <CHANNELPAGE Type='Discrete' Values='0,9'>
+     <PAGE No='0' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps'/>
+     <PAGE No='9' FrequencyRange='2405MHz - 2480MHZ' Modulation='O-QPSK' DataRate='250kbps'>
+       <FRAMELENGTH Type='Range' Min='12' Max='2047' />
+       <CHANNEL Type='Range' Min='0' Max='416' />
+       <FREQUENCY Name='470MHz China' Value='2'>
+         <Modulation Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option4' Values='3' />
+           <MCS Type='Discrete' Names='MCS2,MCS3,MCS4,MCS5,MCS6' Values='2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+       <FREQUENCY Name='780MHz China' Value='3'>
+         <Modulation Name='OFDM' Value='1'>
+           <OPTION Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+       <FREQUENCY Name='863MHz EU' Value='4'>
+         <Modulation Name='OFDM' Value='1'>
+           <Option Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+       <FREQUENCY Name='915MHz US' Value='7'>
+         <Modulation Name='OFDM' Value='1'>
+           <Option Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <INTERLEAVING Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+       <FREQUENCY Name='917MHz Korea' Value='8'>
+         <Modulation Name='OFDM' Value='1'>
+           <Option Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <Interleaving Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+       <FREQUENCY Name='920MHz Japan' Value='9'>
+         <Modulation Name='OFDM' Value='1'>
+           <Option Type='Discrete' Names='Option1,Option2,Option3,Option4' Values='0,1,2,3' />
+           <MCS Type='Discrete' Names='MCS0,MCS1,MCS2,MCS3,MCS4,MCS5,MCS6' Values='0,1,2,3,4,5,6' />
+           <Interleaving Type='Discrete' Names='Disable,Enable' Values='0,1' />
+         </Modulation>
+         <Modulation Name='OQPSK' Value='2'>
+           <RATEMODE Type='Discrete' Names='RateMode 0,Rate Mode 3' Values='0,3' />
+         </Modulation>
+       </FREQUENCY>
+     </PAGE>
+   </CHANNELPAGE>
+   <TXPOWERREGISTERVALUE Type='Range' Min='0' Max='15' />
+   <TXPOWER Type='Range' Min='-17' Max='3' />
+   <CSMA Type='Range' Min='0' Max='1' />
+   <FRAMERETRY Type='Range' Min='0' Max='1' />
+   <ACKREQUEST Type='Range' Min='0' Max='1' />
+   <ANTENNADIVERSITY Type='Discrete' Values='0,1,2' Supported='Yes'/>
+   <ANTENNADIVERSITYPEER Type='Discrete' Values='0,1,2' />
+   <RXDESENSITIZATION Type='Range' Min='0' Max='1' />
+   <TRXSTATE Type='Discrete' Values='0,8,9,15,22,32' />
+   <CRCPEER Type='Range' Min='0' Max='1' />
+   <TESTFRAMESCOUNT Type='Range' Min='0' Max='4294967295' />
+   <FRAMELENGTH Type='Range' Min='12' Max='127' />
+   <RPC Type='NA' />
+   <ISMFREQUENCY Type='NA' />
+   <CRYPTOENGINE Value='AES'/>
+   <OPERATINGVOLTAGE Type='Range' Min='1.8' Max='3.6' />
+   <FREQUENCYBAND Value='2.4 GHz' />
+   <MAXDATARATE Value='1Mbps' />
+   <EXTERNALPACONTROL Supported='Yes' />
+   <RECEIVERSENSITIVITY Value='-110' />
+   <LINKBUDGET Value='120'/>
+   <TEMPERATURE Type='Range' Min='-40' Max='85'/>
+   <DATASHEET url='http://www.atmel.com/images/doc8111.pdf' />
+   <REGISTERS>
+     <REGISTER Name='TRX_STATUS' Offset='1' />
+     <REGISTER Name='TRX_STATE' Offset='2' />
+     <REGISTER Name='TRX_CTRL_0' Offset='3' />
+     <REGISTER Name='TRX_CTRL_1' Offset='4' />
+     <REGISTER Name='PHY_TX_PWR' Offset='5' />
+     <REGISTER Name='PHY_RSSI' Offset='6' />
+     <REGISTER Name='PHY_ED_LEVEL' Offset='7' />
+     <REGISTER Name='PHY_CC_CCA' Offset='8' />
+     <REGISTER Name='CCA_THRES' Offset='9' />
+     <REGISTER Name='RX_CTRL' Offset='A' />
+     <REGISTER Name='SFD_VALUE' Offset='B' />
+     <REGISTER Name='TRX_CTRL_2' Offset='C' />
+     <REGISTER Name='ANT_DIV' Offset='D' />
+     <REGISTER Name='IRQ_MASK' Offset='E' />
+     <REGISTER Name='IRQ_STATUS' Offset='F' />
+     <REGISTER Name='VREG_CTRL' Offset='10' />
+     <REGISTER Name='BATMON' Offset='11' />
+     <REGISTER Name='XOSC_CTRL' Offset='12' />
+     <REGISTER Name='CC_CTRL_0' Offset='13' />
+     <REGISTER Name='CC_CTRL_1' Offset='14' />
+     <REGISTER Name='RX_SYN' Offset='15' />
+     <REGISTER Name='TRX_RPC' Offset='16' />
+     <REGISTER Name='XAH_CTRL_1' Offset='17' />
+     <REGISTER Name='FTN_CTRL' Offset='18' />
+     <REGISTER Name='XAH_CTRL_2' Offset='19' />
+     <REGISTER Name='PLL_CF' Offset='1A' />
+     <REGISTER Name='PLL_DCU' Offset='1B' />
+     <REGISTER Name='PART_NUM' Offset='1C' />
+     <REGISTER Name='VERSION_NUM' Offset='1D' />
+     <REGISTER Name='MAN_ID_0' Offset='1E' />
+     <REGISTER Name='MAN_ID_1' Offset='1F' />
+     <REGISTER Name='SHORT_ADDR_0' Offset='20' />
+     <REGISTER Name='SHORT_ADDR_1' Offset='21' />
+     <REGISTER Name='PAN_ID_0' Offset='22' />
+     <REGISTER Name='PAN_ID_1' Offset='23' />
+     <REGISTER Name='IEEE_ADDR_0' Offset='24' />
+     <REGISTER Name='IEEE_ADDR_1' Offset='25' />
+     <REGISTER Name='IEEE_ADDR_2' Offset='26' />
+     <REGISTER Name='IEEE_ADDR_3' Offset='27' />
+     <REGISTER Name='IEEE_ADDR_4' Offset='28' />
+     <REGISTER Name='IEEE_ADDR_5' Offset='29' />
+     <REGISTER Name='IEEE_ADDR_6' Offset='2A' />
+     <REGISTER Name='IEEE_ADDR_7' Offset='2B' />
+     <REGISTER Name='XAH_CTRL_0' Offset='2C' />
+     <REGISTER Name='CSMA_SEED_0' Offset='2D' />
+     <REGISTER Name='CSMA_SEED_1' Offset='2E' />
+     <REGISTER Name='CSMA_BE' Offset='2F' />
+     <REGISTER Name='TST_CTRL_DIGI' Offset='36' />
+     <REGISTER Name='PHY_TX_TIME' Offset='3B' />
+     <REGISTER Name='PHY_PMU_VALUE' Offset='3B' />
+     <REGISTER Name='TST_AGC' Offset='3C' />
+     <REGISTER Name='TST_SDM' Offset='3D' />
+   </REGISTERS>
+   <TFA>
+     <BatteryMonitor Supported='Yes'/>
+     <Temperature Supported='No'/>
+   </TFA>
+ </Transcevier>
+</TranscevierDetails>
